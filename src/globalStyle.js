@@ -1,6 +1,19 @@
-const { createGlobalStyle } = require("styled-components")
+import GilroyMediumFont from "./assets/fonts/Gilroy-Medium.ttf"
+import GilroyRegularFont from "./assets/fonts/Gilroy-Regular.ttf"
+
+import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
+    @font-face {
+      font-family: "GilroyRegular";
+      src: url(${GilroyRegularFont});
+    }
+
+    @font-face {
+      font-family: "GilroyMedium";
+      src: url(${GilroyMediumFont});
+    }
+
     /* CSS RESET */
     html,
     body,
@@ -126,22 +139,34 @@ export default createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
     }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea,html input[type="button"],
+    input[type="reset"],
+    input[type="submit"],button[disabled],
+    html input[disabled],button::-moz-focus-inner,
+    input::-moz-focus-inner, input[type="checkbox"],
+    input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      border:none;
+      background-image:none;
+      background-color:transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
 
     /* CUSTOM CSS */
-
-    @font-face {
-      font-family: "GilroyRegular";
-      src: url("./assets/fonts/GilroyRegular.otf");
-    }
-
-    @font-face {
-      font-family: "GilroyMedium";
-      src: url("./assets/fonts/GilroyMedium.otf");
-    }
 
     * {
       box-sizing: border-box;
       scrollbar-width: none;
+      font-family : GilroyRegular;
+      background : ${({ theme }) => theme.colors.background};
+      color : ${({ theme }) => theme.colors.textStandard};
     }
 
     html,

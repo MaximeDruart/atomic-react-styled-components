@@ -3,10 +3,16 @@ import { Route, Switch, Redirect } from "react-router-dom"
 import Login from "./05-pages/login"
 import Register from "./05-pages/register"
 import ForgotPassword from "./05-pages/forgotPassword"
+import styled from "styled-components"
+
+const StyledApp = styled.div`
+  width: 100vw;
+  height: 100vh;
+`
 
 const App = () => {
   return (
-    <div className='App'>
+    <StyledApp>
       <Switch>
         <Route exact path='/login' component={Login}></Route>
         <Route exact path='/register' component={Register}></Route>
@@ -16,7 +22,7 @@ const App = () => {
           <Redirect to='/register' />
         </Route>
       </Switch>
-    </div>
+    </StyledApp>
   )
 }
 

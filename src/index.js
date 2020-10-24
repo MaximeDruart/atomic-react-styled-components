@@ -9,8 +9,6 @@ import theme from "./themes/default"
 import { ThemeProvider } from "styled-components"
 import GlobalStyle from "./globalStyle"
 
-console.log(GlobalStyle)
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
