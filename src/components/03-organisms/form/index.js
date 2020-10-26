@@ -12,7 +12,7 @@ const StyledForm = styled.form`
 const Form = (props) => {
   const mappedFieldsets = useMemo(
     () =>
-      props.fields.map((field) => (
+      props.fields.map((field, index) => (
         <Fieldset
           {...props}
           key={field.name}
@@ -22,6 +22,8 @@ const Form = (props) => {
           placeholder={field.placeholder}
           name={field.name}
           type={field.type}
+          index={index}
+          length={props.fields.length}
         />
       )),
     [props]

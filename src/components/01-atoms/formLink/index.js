@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const StyledFormLink = styled.div`
   ${({ theme }) => theme.textStyles.text};
+  margin-top: 8px;
   a {
-    margin-left: 12px;
+    margin-left: 8px;
     text-decoration: none;
     color: ${({ theme }) => theme.colors.foreground};
   }

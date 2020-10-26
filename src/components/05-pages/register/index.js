@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
-import styled from "styled-components"
 import RegisterBackground from "../../../assets/images/registerBackground.jpg"
 import FormLink from "../../01-atoms/formLink"
 import Headline from "../../01-atoms/headline"

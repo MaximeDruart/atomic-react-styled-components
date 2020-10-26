@@ -6,10 +6,12 @@ import FormLink from "../../01-atoms/formLink"
 import { Link } from "react-router-dom"
 
 const StyledFieldset = styled.fieldset`
-  width: 445px;
+  /* width: 445px; */
+  width: 100%;
   height: 100%;
 
   padding: 14px 0;
+  margin-bottom: ${(props) => (props.length - 1 === props.index ? "16px" : "0px")};
 `
 
 const Fieldset = (props) => (

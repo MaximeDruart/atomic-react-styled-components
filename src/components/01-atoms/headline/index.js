@@ -4,7 +4,7 @@ import styled from "styled-components"
 const StyledHeadline = styled.h1`
   ${({ theme, size }) => theme.textStyles[size || "h1"]};
   padding-bottom: 25px;
-  width: 545px;
+  overflow-wrap: anywhere;
 `
 
 const Headline = (props) => <StyledHeadline {...props}></StyledHeadline>

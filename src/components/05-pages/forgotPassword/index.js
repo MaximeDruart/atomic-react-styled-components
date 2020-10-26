@@ -1,8 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import styled from "styled-components"
 import loginBackground from "../../../assets/images/loginBackground.jpg"
-import FormLink from "../../01-atoms/formLink"
 import Headline from "../../01-atoms/headline"
 import Form from "../../03-organisms/form"
 import SideImageAndContainer from "../../04-templates/sideImageAndContainer"
