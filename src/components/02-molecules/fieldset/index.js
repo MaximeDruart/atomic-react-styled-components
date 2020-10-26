@@ -6,7 +6,7 @@ import FormLink from "../../01-atoms/formLink"
 import { Link } from "react-router-dom"
 
 const StyledFieldset = styled.fieldset`
-  width: 545px;
+  width: 445px;
   height: 100%;
 
   padding: 14px 0;
@@ -14,7 +14,6 @@ const StyledFieldset = styled.fieldset`
 
 const Fieldset = (props) => (
   <StyledFieldset {...props}>
-    {console.log(props)}
     <Label htmlFor={props.name}>{props.label}</Label>
     <Input
       id={props.name}
