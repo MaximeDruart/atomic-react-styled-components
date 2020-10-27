@@ -7,7 +7,7 @@ const StyledFormLink = styled.div`
   a {
     margin-left: 8px;
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.foreground};
+    color: ${({ theme }) => theme.colors.primary1};
   }
 `
 
